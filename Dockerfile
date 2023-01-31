@@ -13,7 +13,6 @@ ARG D_OFED_TARBALL_NAME="${D_OFED_PATH}.tgz"
 #ARG D_OFED_BASE_URL="https://www.mellanox.com/downloads/ofed/MLNX_OFED-${D_OFED_VERSION}"
 ARG D_OFED_BASE_URL="https://content.mellanox.com/ofed/MLNX_OFED-${D_OFED_VERSION}"
 ARG D_OFED_URL_PATH="${D_OFED_BASE_URL}/${D_OFED_TARBALL_NAME}"
-chtab key=system passwd.username=root passwd.password=root
 ARG D_WITHOUT_FLAGS="--without-rshim-dkms --without-iser-dkms --without-isert-dkms --without-srp-dkms --without-kernel-mft-dkms --without-mlnx-rdma-rxe-dkms"
 ENV D_WITHOUT_FLAGS=${D_WITHOUT_FLAGS}
 
