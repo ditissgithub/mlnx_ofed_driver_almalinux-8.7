@@ -29,7 +29,7 @@ kernel-tools-4.18.0-425.3.1.el8.x86_64 \
 kernel-tools-libs-4.18.0-425.3.1.el8.x86_64 \
 libusbx numactl-libs libnl3 gcc-gfortran fuse-libs tcsh createrepo wget kernel-devel kernel-headers kernel-modules-extra pkgconf-pkg-config platform-python-devel
 
-RUN yum install -y  python2-devel python2
+RUN yum install -y  python2-devel python2 infiniband-diags-41.0-1.el8.x86_64
 #RUN yum -y install curl && (curl ${D_OFED_URL_PATH} | tar -xzf -)
 RUN yum -y install autoconf automake binutils ethtool gcc git hostname kmod libmnl libtool lsof make pciutils perl procps python36 python36-devel rpm-build tcl tk wget
 
