@@ -1,0 +1,18 @@
+version: '3.1'
+
+services:
+  mlnx_ofed:
+    image: cdac_mlnx_ofed_driver:5.8.1.1.2.1
+    container_name: ofed_driver
+    privileged: true
+    volumes:
+      - /run/mellanox/drivers:/run/mellanox/drivers:shared
+      - /etc/network:/etc/network
+      - /etc:/host/etc
+      - /lib/udev:/host/lib/udev
+    tty: true
+    hostname: ofed
+    network_mode: host
+
+networks:
+  host:
